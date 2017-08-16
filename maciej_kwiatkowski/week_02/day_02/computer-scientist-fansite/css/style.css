@@ -2,11 +2,21 @@
 
 body {
   font-family: 'Cormorant Garamond', serif;
+  background: #1f1e1e;
+}
+
+.header, .img2 {
+  border: 1px solid black;
+  box-shadow: 0 0 55px black;
+  padding: 25px;
+  margin-bottom: 50px;
 }
 
 .container {
   width: 960px;
   margin: 0 auto;
+  background: #fafff9;
+  padding: 80px;
 }
 
 .quotes {
@@ -19,7 +29,6 @@ body {
   font-style: italic;
   line-height: 1.5em;
   border: 1px solid black;
-  border-radius: 5px;
   box-shadow: 0 0 15px black;
 }
 
@@ -34,6 +43,8 @@ h3 {
 nav, a {
   text-align: right;
   padding: 10px;
+  font-size: 1.5em;
+  color: black;
 }
 
 a {
@@ -41,6 +52,52 @@ a {
   font-size: 1.2em;
 }
 
+a:hover {
+  color: gray;
+}
+
 p {
   font-size: 1.2em;
+}
+
+img {
+  display: inline-grid;
+}
+
+.img {
+  height: 400px;
+  width: auto;
+  border: 1px solid black;
+  box-shadow: 0 0 15px black;
+  padding: 5px;
+}
+
+.img2 {
+  border: 1px solid black;
+  box-shadow: 0 0 15px black;
+  padding: 5px;
+}
+
+.video {
+  text-align: center;
+  border: 1px solid black;
+  padding: 25px;
+  box-shadow: 0 0 15px black;
+  margin-top: 50px;
+}
+
+.vid {
+  border: 1px solid black;
+  box-shadow: 0 0 20px black;
+  padding: 15px;
+}
+
+footer {
+  font-family: 'Cormorant Garamond', serif;
+  background: #1f1e1e;
+  text-align: center;
+  color: #fafff9;
+  padding: 25px;
+  font-size: 1.2em;
+  letter-spacing: 2px;
 }

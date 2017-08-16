@@ -18,6 +18,24 @@
 
 // walk backwards right to left and restart
 
+// let img2 = document.getElementsByTagName("img")[0];
+// img2.style.right = "0px";
+//
+// let move = 3;
+//
+// let catMoonwalk = function() {
+//   let startRight = parseInt(img2.style.right);
+//   img2.style.right = (parseInt(img2.style.right) + move) + 'px';
+//   if(startRight > window.innerWidth) {
+//     img2.style.right = "0px";
+//   }
+// }
+// setInterval(catMoonwalk, 10);
+
+
+////////////////////////////////////////////////////////////
+
+
 let img2 = document.getElementsByTagName("img")[0];
 img2.style.right = "0px";
 
@@ -27,7 +45,9 @@ let catMoonwalk = function() {
   let startRight = parseInt(img2.style.right);
   img2.style.right = (parseInt(img2.style.right) + move) + 'px';
   if(startRight > window.innerWidth) {
-    img2.style.right = "0px";
+    move = -3;
+  } else if ( startRight < 0 ){
+    move = 3;
   }
 }
 setInterval(catMoonwalk, 10);
